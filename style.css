@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgray;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.container {
+    display: grid;
+    row-gap: 2em;
+    margin: 6em 2.6em;
+}
+.one {
+    padding: 2em;
+    border-radius: 10px;
+    background:  hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+  
+}
+.profile {
+    display: flex;
+    column-gap: 1.5em;
+    padding-bottom: 1em;
+}
+.profile img {
+    width: 2.5em;
+    height: 2.4em;
+    border-radius: 50px;
+    border: 2px solid  hsla(0, 0%, 81%, 50%);
+}
+.name h1 {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+} 
+.name p {
+    font-size: 0.9em;
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+.main h1 {
+    color:  hsl(0, 0%, 100%);
+    padding-bottom: 1em;
+}
+.main p {
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+.two {
+    padding: 2em;
+    border-radius: 10px;
+    background:  hsl(217, 19%, 35%);
+}
+.three {
+    padding: 2em;
+    border-radius: 10px;
+    background:   hsl(0, 0%, 100%);
+}
+.three .name h1 {
+    color: hsl(217, 19%, 35%);
+} 
+.three .name p {
+    color: hsl(217, 19%, 35%);
+}
+.three .main h1 {
+    color:   hsl(217, 19%, 35%);
+}
+.three .main p {
+    color:  hsl(217, 19%, 35%);
+}
+.four {
+    padding: 2em;
+    border-radius: 10px;
+    background:   hsl(219, 29%, 14%);
+}
+.five {
+    padding: 2em;
+    border-radius: 10px;
+    background:   hsl(0, 0%, 100%);
+}
+.five .name h1 {
+    color: hsl(217, 19%, 35%);
+} 
+.five .name p {
+    color: hsl(217, 19%, 35%);
+}
+.five .main h1 {
+    color:   hsl(217, 19%, 35%);
+}
+.five .main p {
+    color:  hsl(217, 19%, 35%);  
+}
+@media screen and (min-width:375px) {
+    body{
+        background:lightgray;
+    }
+    
+    .container {
+        margin: 10em;
+        display: grid;
+        column-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+    .one {
+        grid-column: 1/3;
+    }
+    .two {
+        grid-column: 3/4;
+    }
+    .three {
+        grid-row: 2/3;
+    }
+    .four {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .five {
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+}
